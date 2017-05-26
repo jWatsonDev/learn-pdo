@@ -1,0 +1,5 @@
+[26-May-2017 11:34:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'learn.learn' doesn't exist' in /home/ubuntu/workspace/practicing-pdo/index.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/practicing-pdo/index.php(25): PDO->query('SELECT * FROM l...')
+#1 {main}
+  thrown in /home/ubuntu/workspace/practicing-pdo/index.php on line 25
