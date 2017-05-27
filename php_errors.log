@@ -3,3 +3,8 @@ Stack trace:
 #0 /home/ubuntu/workspace/practicing-pdo/index.php(25): PDO->query('SELECT * FROM l...')
 #1 {main}
   thrown in /home/ubuntu/workspace/practicing-pdo/index.php on line 25
+[27-May-2017 12:07:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sql' at line 1' in /home/ubuntu/workspace/practicing-pdo/more-pdo.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/practicing-pdo/more-pdo.php(22): PDO->query('sql')
+#1 {main}
+  thrown in /home/ubuntu/workspace/practicing-pdo/more-pdo.php on line 22
