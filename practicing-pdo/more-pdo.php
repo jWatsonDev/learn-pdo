@@ -10,12 +10,12 @@ try {
 }
 $query = $handler->query("SELECT * FROM hello_world");
 // can use the fetch all method to get all of the results instead of just looping through all of them
+/*
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
-
 if(count($results)){
-    echo "there are some";
+    echo "there are so";
 } else {
-    echo "not any";
+    echo "not any"; 
 }
 $name = "Josh";
 $msg = "This is life.";
@@ -30,11 +30,23 @@ $query->execute(array(
     ':name' => $name,
     ':msg' => $msg
 ));
-
+*/
 // CAN ALSO DO LIKE THIS
 /*$sql = "INSERT INTO hello_world (name, message, posted) VALUES (?, ?, NOW())";
 $query = $handler->prepare($sql);
 $query->execute(array($name, $msg));*/
+
+// Getting last inserted ID on handler not query
+echo $handler->lastInsertId();
+
+// getting the row count
+if ($query->rowCount()) {
+    while ($r = $query->fetch(PDO::FETCH_OBJ)) {
+        echo $r->message, "<br>";
+    }
+} else {
+    echo "No results.";
+}
 
 // GREAT STACK OVERFLOW Explanation 
 /*

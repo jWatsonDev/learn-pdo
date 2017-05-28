@@ -8,3 +8,23 @@ Stack trace:
 #0 /home/ubuntu/workspace/practicing-pdo/more-pdo.php(22): PDO->query('sql')
 #1 {main}
   thrown in /home/ubuntu/workspace/practicing-pdo/more-pdo.php on line 22
+[28-May-2017 12:11:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/practicing-pdo/more-pdo.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/practicing-pdo/more-pdo.php(44): PDOStatement->fetch()
+#1 {main}
+  thrown in /home/ubuntu/workspace/practicing-pdo/more-pdo.php on line 44
+[28-May-2017 12:12:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/practicing-pdo/more-pdo.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/practicing-pdo/more-pdo.php(44): PDOStatement->fetch()
+#1 {main}
+  thrown in /home/ubuntu/workspace/practicing-pdo/more-pdo.php on line 44
+[28-May-2017 12:12:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/practicing-pdo/more-pdo.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/practicing-pdo/more-pdo.php(44): PDOStatement->fetch(5)
+#1 {main}
+  thrown in /home/ubuntu/workspace/practicing-pdo/more-pdo.php on line 44
+[28-May-2017 12:14:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/practicing-pdo/more-pdo.php:43
+Stack trace:
+#0 /home/ubuntu/workspace/practicing-pdo/more-pdo.php(43): PDOStatement->fetch(5)
+#1 {main}
+  thrown in /home/ubuntu/workspace/practicing-pdo/more-pdo.php on line 43
